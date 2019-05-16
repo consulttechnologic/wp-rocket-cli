@@ -243,11 +243,7 @@ class WPRocket_CLI extends WP_CLI_Command {
 	 */
 	public function preload( $args = array(), $assoc_args = array() ) {
 
-		if ( rocket_has_i18n() ) {
-			run_rocket_bot_for_all_langs();
-		} else {
-		    run_rocket_bot( 'cache-preload' );
-		}
+		run_rocket_sitemap_preload();
 
 		WP_CLI::success( 'Finished WP Rocket preload cache files.' );
 
