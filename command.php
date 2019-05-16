@@ -219,10 +219,6 @@ class WPRocket_CLI extends WP_CLI_Command {
 			}
 
 		} else {
-
-			if( rocket_has_i18n() ) {
-				rocket_clean_domain_for_all_langs();
-			} else {
 				rocket_clean_domain();
 			}
 
