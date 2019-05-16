@@ -220,8 +220,6 @@ class WPRocket_CLI extends WP_CLI_Command {
 
 		} else {
 
-			WP_CLI::confirm( 'Delete all cache files ?' );
-
 			if( rocket_has_i18n() ) {
 				rocket_clean_domain_for_all_langs();
 			} else {
