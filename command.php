@@ -222,9 +222,6 @@ class WPRocket_CLI extends WP_CLI_Command {
 				rocket_clean_domain();
 				WP_CLI::success( 'All cache files cleared.' );
 			}
-
-		}
-
 	}
 
 	/**
